@@ -1,2 +1,1909 @@
 # Network-Defense
 Network Defense Essentials (NDE)
+
+Table of Contents
+
+
+# Module 01: Network Security Fundamentals
+- Network Security Controls
+- Network Security Protocols
+- Network Security Devices
+
+- Fundamentals of Network Security
+	- Information Assurance (IA) Principles
+		- Confidentiality
+		- Integrity
+		- Availability
+		- Non-repudiation
+		- Authentication
+	- Network Defense Benefits
+		- Increased Profits
+		- Improved Productivity
+		- Enhanced Compliance
+		- Client Confidence
+	- Network Defense Challenges
+		- Distributed computing environments
+		- Emerging threats
+		- Lack of network security skills
+	- Types of Network Defense Approaches
+		- Preventive Approach
+		- Reactive Approach
+		- Retrospective Approach
+		- Proactive Approach
+	- Network Security Controls
+		- Administrative Security Controls
+			- Regulatory framework compliance
+			- Security policy
+			- Employee monitoring and supervising
+			- Information classification
+			- Separation of duties
+			- Principle of least privileges
+			- Security awareness and training
+		- Physical Security Controls
+			- Prevention Controls
+			- Deterrence Controls
+			- Detection Controls
+		- Technical security controls
+			- System access controls
+			- Network access controls
+			- Authentication and authorization
+			- Encryption and Protocols
+			- Network Security Devices
+			- Auditing
+
+- Network Security Protocols 
+
+- The security protocols at the transport layer
+	- Transport Layer Security (TLS)
+	- Secure Sockets Layer (SSL)
+- The security protocols at the network layer
+	- Internet Protocol Security (IPsec)
+- The security protocols at the application layer
+	- Pretty Good Privacy (PGP) protocol
+	- S/MIME protocol (Secure/Multipurpose Internet Mail Extensions)
+	- Secure HTTP (Secure Hypertext Transfer Protocol) (S-HTTP)
+	- Hyper Text Transfer Protocol Secure (HTTPS)
+	- Kerberos
+	- RADIUS (Remote Authentication Dial-in User Service)
+	- TACACS+ (Terminal Access Controller Access Control System Plus)
+
+
+# Module 02: Identification, Authentication, and Authorization 
+- Access Control Principles, Terminologies, and Models 
+- Access Control Principles
+	- Separation of Duties (SoD)
+	- Need-to-know
+	- Principle of Least Privilege (POLP)
+- Access Control Models
+	- Mandatory Access Control (MAC)
+	- Discretionary Access Control (DAC)
+	- Role-Based Access Control (RBAC): 
+		- Just Enough Administration (JEA)
+		- Windows Admin Center (WAC)
+	- Rule-based Access Control (RB-RBAC)
+
+	- Logical Implementation of DAC, MAC, and RBAC
+
+- Identity and Access Management (IAM) Concepts 
+			
+- Types of Authentication
+	- User Access Management (AM): Authentication
+		- Something you know
+		- Something you have
+		- Something you are
+	- Types of Authentication
+		- Password Authentication
+		- Smart Card Authentication
+		- Biometric Authentication
+		- Two-factor Authentication
+		- Single Sign-on (SSO) Authentication
+
+- User Access Management (AM): Authorization
+	- Centralized Authorization
+	- Decentralized Authorization
+	- Implicit Authorization
+	- Explicit Authorization
+
+- User Access Management (AM): Accounting
+
+
+# Module 03: Network Security Controls, Administrative Controls 
+
+- Regulatory Frameworks, Laws, and Acts 
+	- Regulatory Frameworks
+		- Policies
+		- Standards
+		- Procedures, Practices, and Guidelines
+	- Why Organizations Need Compliance
+		- Improved Security
+		- Minimized Losses
+		- Maintenance of Trust
+		- Increased Control
+	- Identifying Which Regulatory Framework to Comply
+	- Deciding on How to Comply to Regulatory Framework
+
+	- Payment Card Industry Data Security Standard (PCI DSS) https://www.pcisecuritystandards.org
+	- Health Insurance Portability and Accountability Act (HIPAA) https://www.hhs.gov
+	- Sarbanes Oxley Act (SOX) https://www.sec.gov
+	- Gramm-Leach-Bliley Act (GLBA) https://www.ftc.gov
+	- General Data Protection Regulation (GDPR) https://gdpr.eu
+	- Data Protection Act 2018 (DPA) https://www.legislation.gov.uk
+	- ISO Information Security Standards https://www.iso27001security.com
+	- The Digital Millennium Copyright Act (DMCA) https://www.copyright.gov
+	- The Federal Information Security Management Act (FISMA) https://csrc.nist.gov
+- Other Information Security Acts and Laws
+	- USA Patriot Act 2001 https://www.fincen.gov
+	- Freedom of Information Act (FOIA) http://www.foia.gov
+	- The Electronic Communications Privacy Act https://it.ojp.gov
+	- The Human Rights Act 1998 https://www.legislation.gov.uk
+	- The Freedom of Information Act 2000 https://www.legislation.gov.uk
+	- Computer Fraud and Abuse Act https://ilt.eff.org
+
+- Cyber Law in Different Countries:
+	- United States:
+		- Section 107 of the Copyright Law mentions the doctrine of “fair use” https://www.copyright.gov
+		- Online Copyright Infringement Liability Limitation Act https://www.copyright.gov
+		- The Lanham (Trademark) Act (15 USC §§ 1051 - 1127) https://www.uspto.gov
+		- Foreign Intelligence Surveillance Act https://fas.org
+		- Protect America Act of 2007 https://www.justice.gov
+		- Privacy Act of 1974 https://www.justice.gov
+		- National Information Infrastructure Protection Act of 1996 https://www.nrotc.navy.mil
+		- Computer Security Act of 1987 https://csrc.nist.gov
+		- Federal Identity Theft and Assumption Deterrence Act https://www.ftc.gov
+	- Australia:
+		- The Trade Marks Act 1995 https://www.legislation.gov.au
+		- The Patents Act 1990
+		- The Copyright Act 1968
+		- Cybercrime Act 2001
+	- United Kingdom:
+		- The Copyright, Etc. and Trademarks (Offenses And Enforcement) Act 2002 https://www.legislation.gov.uk
+		- Trademarks Act 1994 (TMA)
+		- Computer Misuse Act 1990
+		- The Network and Information Systems Regulations 2018
+		- Communications Act 2003
+		- The Privacy and Electronic Communications (EC Directive) Regulations 2003
+		- Investigatory Powers Act 2016
+		- Regulation of Investigatory Powers Act 2000
+	- China:
+		- Copyright Law of the People’s Republic of China (Amendments on October 27, 2001) http://www.npc.gov.cn
+		- Trademark Law of the People's Republic of China (Amendments on October 27, 2001)
+	- India:
+		- The Patents (Amendment) Act, 1999, Trade Marks Act, 1999, The Copyright Act, 1957 http://www.ipindia.nic.in
+		- Information Technology Act https://www.meity.gov.in
+	- Germany 
+		-Section 202a. Data Espionage, Section 303a. Alteration of Data, Section 303b. Computer Sabotage https://www.cybercrimelaw.net
+	- Italy:
+		- Penal Code Article 615 ter https://www.cybercrimelaw.net
+	- Japan:
+		- The Trademark Law (Law No. 127 of 1957), Copyright Management Business Law (4.2.2.3 of 2000) https://www.iip.or.jp
+	- Canada:
+		- Copyright Act (R.S.C., 1985, c. C-42), Trademark Law, Canadian Criminal Code Section 342.1 https://laws-lois.justice.gc.ca
+	- Singapore:
+		- Computer Misuse Act https://sso.agc.gov.sg
+	- South Africa:
+		- Trademarks Act 194 of 1993 http://www.cipc.co.za
+		- Copyright Act of 1978 https://www.nlsa.ac.za
+	- South Korea:
+		- Copyright Law Act No. 3916 https://www.copyright.or.kr
+		- Industrial Design Protection Act https://www.kipo.go.kr
+	- Belgium:
+		- Copyright Law, 30/06/1994 https://www.wipo.int
+		- Computer Hacking https://www.cybercrimelaw.net
+	- Brazil.
+		- Unauthorized modification or alteration of the information system https://www.domstol.no
+	- Hong Kong:
+		- Article 139 of the Basic Law https://www.basiclaw.gov.hk
+
+
+
+- Design and Develop Security Policies
+	- What is Security Policy?
+	- Need for a Security Policy
+
+- Advantages of Security Policies
+	- Enhanced Data and Network Security
+	- Risk Mitigation
+	- Monitored and Controlled Device Usage and Data Transfers
+	- Better Network Performance
+	- Quick Response to Issues and Lower Downtime
+	- Reduction in Management Stress Levels
+	- Reduced Costs
+
+- Features of a Good Security Policy:
+	- Concise and Clear
+	- Usable
+	- Economically Feasible
+	- Understandable
+	- Realistic
+	- Consistent
+	- Procedurally Tolerable
+	- Cyber and Legal Laws, Standards, Rules and Regulations Compliance
+
+- Key Elements of Security Policy
+	- Clear Communication
+	- Brief and Clear Information
+	- Defined Scope and Applicability
+	- Enforceable by Law
+	- Recognizes Areas of Responsibility
+	- Sufficient Guidance
+
+- Contents of a Security Policy. Security Policy Implementation
+	- High-level Security Requirements:
+		- Discipline Security Requirements
+		- Safeguard Security Requirements
+		- Procedural Security Requirements
+		- Assurance Security Requirements
+	- Policy Description Based on Requirement
+	- Security Concept of Operation
+	- Allocation of Security Enforcement to Architecture Elements
+
+- Typical Policy Document Content. The following are the important policy sections:
+	- Document Control 
+	- Document Location
+	- Revision History 
+	- Version Number 
+	- Approvals 
+	- Distribution 
+	- Document History 
+	- Overview 
+	- Purpose
+	- The scope 
+	- Definitions
+	- Roles and Responsibilities
+	- Target Audience
+	- Policies 
+	- Sanctions and Violations 
+	- Related Standards, Policies, and Processes 
+	- Contact Information 
+	- Where to Find More Information 
+	- Glossary/Acronyms
+
+- Types of Information Security Policies:
+	- Enterprise Information Security Policy (EISP)
+	- Issue Specific Security Policy (ISSP)
+	- System Specific Security Policy (SSSP)
+
+- Internet Access Policies
+	- Promiscuous Policy
+	- Permissive Policy	
+	- Paranoid Policy
+	- Prudent Policy
+
+- Password Policy:
+	- Password Length and Formation
+	- Password Blacklists
+	- Password Duration
+	- Common Password Practices
+
+- Conduct Different Types of Security and Awareness Training:
+	- Employee Awareness and Training: Security Policy
+	- Employee Awareness and Training: Physical Security
+	- Employee Awareness and Training: Social Engineering
+	- Employee Training and Awareness: Data Classification
+		- Unclassified
+		- Restricted
+		- Confidential
+		- Secret
+		- Top Secret
+
+
+# Module 04: Network Security Controls and Physical Controls 
+- Importance of Physical Security 
+	- Physical Security Attack Vectors
+	- Natural/Environmental Threats
+		- Floods
+		- Fires
+		- Earthquakes
+		- Lightning and thunder
+		- Temperature and humidity
+	- Man-made Threats
+		- Vandalism
+		- Device loss
+		- Damage to physical devices
+		- Theft
+		- Terrorism
+		- Social engineering
+		- Unauthorized access to systems
+
+- Physical Security Controls 
+	- Preventive Controls
+	- Detective Controls
+	- Deterrent Controls
+	- Recovery Controls
+	- Compensating Controls
+
+- Location Considerations
+- Site Architecture Considerations
+
+- Workplace Security 
+	- Fire Fighting Systems
+		- Active Fire Protection:
+			- Fire detection system
+				- Smoke detectors
+				- Flame detectors
+				- Heat detectors
+			- Fire suppression:
+				- Fire extinguisher
+				- Standpipe system
+				- Sprinkler system
+		- Passive Fire Protection
+	- Physical Barriers
+		- Fences/electric fences/metal rails
+		- Bollards
+		- Turnstiles
+		- Other Barriers:
+			- Doors
+			- Windows
+			- Grills
+			- Glass
+	- Security Personnel
+	- Physical Locks
+		- Mechanical locks
+			- Warded lock
+			- Tumbler lock
+		- Digital locks
+		- Electric/electromagnetic locks
+		- Combination locks
+	- Concealed Weapon/Contraband Detection Devices
+		- Walkthrough metal detectors
+		- Handheld metal detectors
+		- X-ray inspection systems
+	- Mantrap
+	- Warning Signs
+	- Alarm System
+	- Video Surveillance
+		- Dome CCTV
+		- Bullet CCTV
+		- C-mount CCTV
+		- Day/night CCTV
+		- Infrared night-vision CCTV
+		- Network/IP CCTV
+		- Wireless CCTV
+		- High-definition CCTV
+	- Lighting System
+		- Continuous lighting
+		- Standby lighting
+		- Movable lighting
+		- Emergency lighting
+	- Power Supply. UPS
+	- Reception Area
+	- Server/Backup Device Security
+	- Critical Assets and Removable Devices
+	- Securing Network Cables
+	- Securing Portable Mobile Devices
+	
+- Environmental Controls 
+	- Heating, Ventilation, and Air Conditioning (HVAC)
+		- Types of HVAC Systems
+			- Heating and air-conditioning split system
+			- Hybrid heat split system
+			- Duct-free split heating and air-conditioning system
+			- Packaged heating and air-conditioning system
+	- Electromagnetic Interference (EMI) Shielding
+	- Hot and Cold Aisles
+
+- Physical Security Checklists
+	- Follow copyright rules and licensing restrictions
+	- Store all removable and important items in a locker when not in use
+	- Keep sensitive areas under surveillance
+	- Always advise employees to swipe their card at the entrance
+	- Avoid keeping any combustible material in the workplace
+	- Always ensure company satisfaction
+	- Evaluate the physical security of the location
+	- Avoid disconnecting consoles from ports
+	- Use of alarms and sensors during fire, smoke, etc.
+	- Prevent damage to hardware and software
+	- Avoid leaving any devices or important data in parking areas or cars
+	- Avoid storing confidential information on mobile devices
+
+
+# Module 05: Network Security Controls. Technical Controls 
+
+- Security benefits of network segmentation:
+	- Improved security: 
+	- Better access control
+	- Improved monitoring
+	- Improved performance
+	- Better containment
+
+- Types of Network Segmentation 
+	- Physical Segmentation
+	- Logical Segmentation
+	- Network Virtualization
+
+- Types of Bastion Hosts
+	- Single-homed Bastion Host
+	- Multi-homed Bastion Host
+	- Internal Bastion Host
+	- Non-routing Dual-homed Hosts
+	- Victim Machines
+	- External Services Hosts
+	- One-box Firewalls
+
+- Demilitarized Zone (DMZ)
+	- Different Ways to Create a DMZ
+		- Single firewall DMZ
+		- Dual firewall DMZ
+
+- Types of Firewalls and their Role 
+	- Hardware Firewalls
+	- Software Firewalls
+	- Host-based Firewalls
+	- Network-based Firewalls
+
+- Firewall technologies
+	- Packet Filtering
+	- Circuit-Level Gateways
+	- Application-Level Gateways
+	- Stateful Multilayer Inspection Firewall
+	- Application Proxy
+	- Network Address Translation (NAT)
+	- Virtual Private Network (VPN)
+	- Next Generation Firewall (NGFW)
+- Firewall Capabilities
+- Firewall Limitations
+- Firewall Implementation and Deployment Process
+- Host-based Firewall Protection with Iptables
+- UFW (uncomplicated firewall)
+- Secure Firewall Implementation: Best Practices
+- Secure Firewall Implementation: Recommendations
+- Secure Firewall Implementation: Do’s and Don’ts
+
+
+- Types of IDS/IPS and their Role 
+	- How an IDS Detects an Intrusion?
+		- Signature Recognition
+		- Anomaly Detection
+		- Protocol Anomaly Detection
+	- IDS Capabilities
+	- IDS/IPS Limitations: What an IDS/IPS is NOT?
+	- IDS/IPS Security Concerns
+
+- General Indications of Intrusions
+	- File System Intrusions
+	- Network Intrusions
+	- System Intrusions
+- Approach-based IDS
+	- Signature-based Detection
+	- Anomaly-based Detection
+	- Stateful Protocol Analysis
+- Anomaly and Misuse Detection Systems
+- Behavior-based IDS
+	- Active IDS Mode
+	- Pasive IDS Mode
+- Protection-based IDS
+	- Network Intrusion Detection System (NIDS)
+	- Host Intrusion Detection Systems (HIDS)
+	- Hybrid Intrusion Detection Systems (Hybrid IDS)
+- Structure-based IDS
+	- Distributed Structure of an IDS
+	- Centralized Structure of IDS
+- Analysis Timing–based IDS
+	- Interval-based IDS
+	- Real-time–based IDS
+- Source Data Analysis–based IDS
+	- Intrusion Detection Using Audit Trails
+	- Intrusion Detection Using Network Packets
+- IDS Components
+	- Network sensors
+	- Analyzer
+	- Alert systems
+	- Command console
+	- Response system
+	- Database of attack signatures or behaviors
+- Collaboration of IDS Components in Intrusion Detection
+- Deployment of Network and Host-based IDS
+	- Staged IDS Deployment
+	- Deploying a Host-based IDS
+- Types of IDS Alerts
+	- True Positive (Attack - Alert)
+	- False Positive (No attack - Alert)
+	- False Negative (Attack - No Alert)
+	- True Negative (No attack - No Alert)
+- Characteristics of Good IDS Solutions
+- Selection of an Appropriate IDS/IPS Solutions
+	- General requirements
+	- Security capability requirements
+	- Performance requirements
+		- Network-based IDS (NIDS)
+		- Host-based IDS (HIDS)
+	- Management requirements
+	- Lifecycle costs
+
+- Intrusion Detection Tools
+	- Snort https://www.snort.org
+	- Suricata https://suricata-ids.org
+	- AlienVault® OSSIM™ (https://cybersecurity.att.com)
+	- SolarWinds Security Event Manager (https://www.solarwinds.com)
+	- OSSEC (https://www.ossec.net)
+	- Zeek (https://zeek.org)
+	- Sagan Log Analysis Engine (https://quadrantsec.com)
+
+
+- Types of Honeypots 
+	- Low-interaction Honeypots
+	- Medium-interaction Honeypots
+	- High-Interaction Honeypots
+	- Pure Honeypots
+	- Production Honeypots
+	- Research Honeypots
+	- Malware Honeypots
+	- Database Honeypots
+	- Spam Honeypots
+	- Email Honeypots
+	- Spider Honeypots
+	- Honeynets
+
+- Honeypot Tools
+	- HoneyBOT https://www.atomicsoftwaresolutions.com
+	- KFSensor (http://www.keyfocus.net)
+	- MongoDB-HoneyProxy (https://github.com)
+	- Modern Honey Network (https://github.com)
+	- ESPot (https://github.com)
+	- HoneyPy (https://github.com)
+
+
+- Types of Proxy Servers and their Benefits 
+	- Benefits of Proxy Server
+	- Functioning of a Proxy Server
+	- Proxy Servers vs Packet Filters
+	- Types of Proxy Servers
+		- Transparent Proxy
+		- Non-transparent Proxy
+		- SOCKS Proxy
+		- Anonymous Proxy
+		- Reverse Proxy
+	- How to Configure Proxy Server
+	- Limitations of Proxy Server
+	- Examples of Proxy Server: 
+		- Squid Proxy http://www.squid-cache.org
+		- Whonix (https://www.whonix.org)
+		- Psiphon (https://psiphon.ca)
+		- FoxyProxy (https://getfoxyproxy.org)
+		- GeoSurf (https://www.geosurf.com)
+		- JonDo (https://anonymous-proxy-servers.net)
+		- Proxify (https://proxify.com)
+		- Guardster (http://www.guardster.com)
+		- Global Proxy Network (https://infatica.io)
+		- Anonym8 (https://github.com)
+		- ProxySite (https://www.proxysite.com)
+		- ProxyCap (https://www.proxycap.com)
+		- CCProxy (https://www.youngzsoft.net)
+		- Fiddler (https://www.telerik.com)
+		- BlackArch Proxy (https://blackarch.org)
+		- Artica Proxy (https://artica-proxy.com)
+
+- Fundamentals of VPN and its importance in Network Security
+	- What is a VPN?
+	- How VPN Works
+	- Why Establish VPN?
+	- VPN Components
+		- VPN client
+		- Network access server (NAS)
+		- Tunnel terminating device (or VPN server)
+		- VPN protocol
+	- VPN Concentrators
+		- Functions of a VPN Concentrator
+			- Data encryption
+			- Managing tunnels
+			- User authentication
+			- Traffic handler
+	- VPN Types and Categories
+		- Client-to-Site (Remote-access) VPNs
+		- Site-to-Site VPNs
+		- Hardware VPNs
+			- Cisco Systems https://www.cisco.com
+			- SonicWALL https://www.sonicwall.com
+			- Juniper Networks https://www.juniper.net
+			- WatchGuard https://www.watchguard.com
+		- Software VPNs
+			- CheckPoint https://www.checkpoint.com
+			- NETGEAR https://www.netgear.com
+			- Cisco Systems https://www.cisco.com
+	- Selecting an Appropriate VPN
+	- VPN Core Functionality: Encapsulation
+		- Types of VPN Tunneling
+			- Voluntary tunneling
+			- Compulsory tunneling
+		- VPN encapsulation protocols:
+			- Point-to-Point Tunneling Protocol (PPTP)
+			- Layer 2 Tunneling Protocol (L2TP)
+				- L2TP encapsulation
+				- IPsec encapsulation
+			- Secure Shell (SSH)
+				- Port forwarding
+				- Secure tunneling
+			- Socket Secure (SOCKS)
+
+	- VPN Core Functionality: Encryption
+		- VPN Encryption Technologies
+			- Triple DES algorithm
+			- Secure Socket Layer (SSL)
+			- Open VPN
+
+	- VPN Core Functionality: Authentication
+		- User authentication
+		- Computer authentication with L2TP/IPsec
+		- Data authentication and integrity
+
+	- Authentication Techniques Used in VPN
+		- IPsec Family
+			- Internet Protocol Security (IPsec)
+			- Layer 2 Tunneling Protocol (L2TP)
+		- Kerberos
+		- Password Authentication Protocol (PAP)
+		- Shiva Password Authentication Protocol (SPAP)
+		- Challenge Handshake Authentication Protocol (CHAP)
+		- Microsoft CHAP (MS-CHAP)
+		- Extensible Authentication Protocol (EAP)
+
+	- VPN Technologies
+		- Trusted VPN
+		- Secure VPN
+		- Hybrid VPN
+	- VPN Topologies
+		- Hub-and-spoke
+		- Point-to-point 
+		- Full mesh
+		- Star
+	- Example of a VPN: 
+		- OpenVPN https://openvpn.net
+	- VPN Security Risks
+		- VPN Fingerprinting
+		- Insecure Storage of Authentication Credentials
+		- Username Enumeration Vulnerabilities
+		- Offline Password Cracking
+		- Man-in-the-middle Attacks
+		- Lack of Account Lockout
+		- Poor Default Configurations
+		- Poor Guidance and Documentation
+	- VPN Security
+		- Firewalls
+		- IPsec Server
+			- Transport Mode
+				- AH in transport mode
+				- ESP in transport mode
+			- Tunnel Mode
+				- AH in tunnel mode
+				- ESP in tunnel mode
+		- AAA Server (Authentication, authorization, and accounting)
+		- Remote Access Dial-In User Service (RADIUS)
+		- Connection to VPN: SSH and PPP
+		- Connection to VPN: SSL and PPP
+		- Connection to VPN: Concentrator
+
+
+- Security Incident and Event Management (SIEM) 
+	- SIEM Architecture
+	- SIEM Functions
+		- Log collection
+		- Log analysis
+		- Event correlation
+		- Log forensics
+		- IT compliance and reporting
+		- Application log monitoring
+		- Object access auditing
+		- Data aggregation
+		- Real-time alerting
+		- User activity monitoring
+		- Dashboards
+		- File integrity monitoring
+		- System and device log monitoring
+		- Log retention
+	- SIEM Solutions:
+		- Splunk Enterprise https://www.splunk.com
+		- ArcSight ESM (https://www.microfocus.com)
+		- IBM Qradar SIEM (https://www.ibm.com)
+		- AlienVault OSSIM (https://cybersecurity.att.com)
+		- FortiSIEM (https://www.fortinet.com)
+		- SolarWinds Security Event Manager (SEM) (https://www.solarwinds.com)
+
+
+- User Behavior Analytics (UBA) 
+	- Why User Behavior Analytics is Effective?
+		- Detects malicious insiders and outsiders at an early stage
+		- Identifies possible risk events in the IT infrastructure
+		- Analyzes different patterns of human behavior and large volumes of user data
+		- Monitors geo-location for each login attempt
+		- Detects malicious behavior and reduces risk
+		- Monitors privileged accounts and issues real-time alerts for suspicious behavior insights to security teams
+		- Provides insights to security teams
+		- Produces results soon after deployment
+	- UBA/UEBA Tools
+		- Exabeam Advanced Analytics (https://www.exabeam.com)
+		- LogRhythm UEBA (https://logrhythm.com)
+		- Dtex Systems (https://dtexsystems.com)
+		- Gurucul Risk Analytics (GRA) (https://gurucul.com)
+		- Securonix UEBA (https://www.securonix.com)
+
+
+- Antivirus/Anti-malware Software 
+	- Anti-Trojan Software
+		- Kaspersky Internet Security https://www.kaspersky.com
+		- McAfee® LiveSafe™ (https://www.mcafee.com)
+		- Bitdefender Total Security (https://bitdefender.com)
+		- HitmanPro (https://www.hitmanpro.com)
+		- Malwarebytes (https://www.malwarebytes.org)
+		- Zemana Antimalware (https://www.zemana.com)
+	- Antivirus Software
+		- Bitdefender Antivirus Plus https://www.bitdefender.com
+		- ClamWin (http://www.clamwin.com)
+		- Kaspersky Anti-Virus (https://www.kaspersky.com)
+		- McAfee Total Protection (https://www.mcafee.com)
+		- Avast Premier Antivirus (https://www.avast.com)
+		- ESET Internet Security (https://www.eset.com)
+
+
+# Module 06: Virtualization and Cloud Computing
+- Virtualization Essential Concepts and OS Virtualization Security 
+	- Virtualization Approaches
+		- Full Virtualization
+		- OS assisted Virtualization or Para Virtualization
+		- Hardware assisted Virtualization
+		- Hybrid Virtualization
+	- Levels of Virtualization
+		- Storage Device Virtualization
+		- File System Virtualization
+		- Server Virtualization
+		- Fabric Virtualization
+	- Types of Virtualization
+		- Operating System Virtualization
+		- Network Virtualization
+		- Server Virtualization
+		- Desktop Virtualization
+	- Virtualization Components
+		- Hypervisor/Virtual Machine Monitor
+		- Guest machine/virtual machine
+		- Host/physical machine
+		- Management Server
+		- Management Console
+		- Network Components
+		- Virtual Storage
+	- Virtualization Enablers
+	- Common Virtualization Vendors
+		- VMware ESXi https:/www.vmware.com
+		- Citrix Hypervisor https://www.citrix.com
+		- Virtual Iron https://www.oracle.com
+		- Microsoft Hyper-V Server https://www.microsoft.com
+		- VirtualBox https://www.virtualbox.org
+	- OS Virtualization Security and Concerns
+		- Container
+			- Containers as a service (CaaS)
+			- Container Engine
+			- Container Orchestration
+		- Container Technology Architecture
+			- Types of Containers
+				- OS Containers
+				- Application Containers
+			- Containers v/s Virtual Machine
+		- Docker
+			- Docker Engine
+				- Docker Daemon
+				- Docker Engine REST API
+				- Docker CLI
+			- Docker Systems Working Mechanism
+			- Docker Architecture
+				- Docker Client
+				- Docker Host
+				- Images
+				- Containers
+				- Networking
+				- Docker Registries
+			- Docker Networking
+				- Sandbox
+				- Endpoint
+				- Network
+				- CNM Driver Interfaces
+					- Network Drivers
+						- Native Network Driver
+						- Remote Network Driver
+					- IPAM Drivers
+				- Docker Native Network Drivers
+					- Host
+					- Bridge
+					- Overlay
+					- MACVLAN
+					- None
+		- Kubernetes
+			- Kubernetes Cluster Architecture
+				- Control Plane Components
+					- Kube-apiserver
+					- etcd
+					- Kube-scheduler
+					- kube-controller-manager
+					- cloud-controller-manager
+				- Kubernetes Node
+					- Kubelet
+					- Kube-proxy
+					- Container Runtime
+				- Kubernetes Features
+					- Service Discovery and Load Balancing
+					- Storage Orchestration
+					- Automated Rollouts and Rollbacks
+					- Automatic bin packing
+					- Self-healing
+					- Secret and Configuration Management
+
+		- Container Security Challenges
+			- Inflow of Vulnerable Source Code
+			- Large Attack Surface
+			- Lack of Visibility
+			- DevOps Speed
+			- Noisy Neighboring Containers
+			- Container Breakout to the Host
+			- Network-based Attacks
+			- Bypassing isolation/Lack of isolation
+			- Ecosystem complexity
+		- Container Security Threats
+			- Image Threats
+				- Image Vulnerabilities
+				- Configuration Defect
+				- Embedded Malware
+				- Embedded Clear Text Secrets
+				- Use of Untrusted Image
+			- Registry Threats
+				- Insecure Connections to Registries
+				- Stale Images in Registries
+				- Insufficient Authentication and Authorization Restrictions
+			- Orchestrator Risks
+				- Unbounded Administrative Access
+				- Unauthorized Access
+				- Poorly Separated Inter-Container Network Traffic
+				- Mixing of Workload Sensitivity Levels
+				- Orchestrator Node Trust:
+			- Container Risks
+				- Vulnerabilities within the Runtime Software
+				- Unbounded Network Access from Containers
+				- Insecure Container Runtime Configurations
+				- App Vulnerabilities
+				- Rogue Containers
+			- Host OS Risks
+				- Large Attack Surface
+				- Shared Kernel
+				- Host OS Component Vulnerabilities
+				- Improper User Access Rights
+				- Host OS File System Tampering
+			- Docker Security Threats
+				- Escaping
+				- Cross-Container Attacks
+				- Inner-Container Attacks
+				- Docker registry Attacks
+					- Image forgery
+					- Replay Attack
+			- Kubernetes Security Challenges and Threats
+				- Explosion of East-West Traffic
+				- Increased Attack Surface
+				- Automating Security to Keep Pace
+				- Too many containers
+				- Communication between containers
+				- Default configuration settings
+				- Runtime security challenges
+				- Compliance issues
+
+	- OS Virtualization Security Best Practices
+		- Best Practices for Container Security
+		- Best Practices for Docker Security
+		- Best Practices for Kubernetes Security
+
+	- Docker Security Tools
+		- Docker Bench for Security https://github.com
+		- Twistlock (https://github.com)
+		- Aqua (https://www.aquasec.com)
+		- Anchore (https://anchore.com)
+		- NeuVector (https://neuvector.com)
+		- CloudPassage Halo (https://www.cloudpassage.com)
+	
+
+- Cloud Computing Fundamentals 
+	- Characteristics of Cloud Computing
+		- On-demand self-service
+		- Distributed storage
+		- Rapid elasticity
+		- Automated management
+		- Broad network access
+		- Resource pooling
+		- Measured service
+		- Virtualization technology
+	- Limitations of Cloud Computing
+	- Cloud Computing Benefits
+		- Economic
+		- Operational
+		- Staffing
+		- Security
+
+	- Types of Cloud Computing Services
+		- Infrastructure-as-a-Service (IaaS)
+		- Platform-as-a-Service (PaaS)
+		- Software-as-a-Service (SaaS)
+		- Identity-as-a-Service (IDaaS)
+		- Security-as-a-Service (SECaaS)
+		- Container-as-a-Service (CaaS)
+		- Function-as-a-Service (FaaS)
+		- Anything-as-a-Service (XaaS)
+
+	- Customer vs. CSP Shared Responsibilities in IaaS, PaaS, and SaaS
+	- Cloud Deployment Models
+		- Public Cloud
+		- Private Cloud
+		- Community Cloud
+		- Hybrid Cloud
+		- Multi Cloud
+	- On-premises vs. Hosted vs. Cloud
+		- Ownership
+		- Deployment
+		- Performance
+		- Cost
+		- Connectivity
+		- Security
+		- Maintenance
+		- Scalability
+
+	- NIST Cloud Deployment Reference Architecture
+		- Cloud Consumer
+		- Cloud Provider
+		- Cloud Carrier
+		- Cloud Auditor
+		- Cloud Broker
+			- Service Intermediation
+			- Service Aggregation
+			- Service Arbitrage
+
+	- Cloud Storage Architecture
+	- Cloud Service Providers
+		- Amazon Web Service (AWS) https://aws.amazon.com
+		- Microsoft Azure https://azure.microsoft.com
+		- Google Cloud Platform (GCP) https://cloud.google.com
+		- IBM Cloud https://www.ibm.com
+
+- Insights of Cloud Security and Best Practices 
+	- Cloud Security: Shared Responsibility
+	- Elements of Cloud Security
+		- Cloud Service Consumers
+		- Cloud Service Providers
+		- Identity and Access Management (IAM)
+		- Compliance
+			- Knowing the requirements that impact an organization
+			- Conducting regular compliance risk assessments 
+			- Monitoring and auditing the compliance program of an organization proactively
+		- Data Storage Security
+			- Local data encryption
+			- Key management
+			- Strong password management
+			- Periodic security assessment of data security controls
+			- Cloud data backup
+		- Network Security
+		- Monitoring
+			- Data replication
+			- Data file name changes
+			- File classification changes
+			- Data ownership changes
+		- Logging
+			- Aggregate All Logs
+			- Capture Appropriate Data
+			- Keep Applications Safe
+			- System Scalability
+
+		- AWS Identity and Access Management
+			- Shared access to AWS account/enhanced Security
+			- Granular permissions
+			- Secure access to AWS resources for applications that run on Amazon EC2
+			- Multi-factor authentication
+			- Identity federation
+			- Identity information for assurance
+			- Payment Card Industry Data Security Standard
+			- Integrated with AWS Services
+			- Password Policy
+			- Policies and Groups
+		- AWS IAM: Lock Your AWS Account Root User Access Keys
+			- Secure Root User Access Key
+				- An AWS root user access key should not be created unless required
+				- The AWS root user access key should be regularly changed or deleted.
+				- Never share the AWS root user password or access keys 
+				- Use strong passwords for logging in the AWS management console.
+				- Enable AWS MFA on the AWS root user account
+		- AWS IAM: Create Individual IAM Users
+		- AWS IAM: Use Groups to Assign Permissions to IAM Users
+		- AWS IAM: Grant Least Privilege
+		- AWS IAM: Use AWS-managed Policies
+			- Full access AWS managed policies 
+			- Power-user AWS managed policies 
+			- Partial-access AWS managed policies 
+
+	- Best Practices for Securing the Cloud
+		- Enforce data protection, backup, and retention mechanisms.
+		- Enforce SLAs for patching and vulnerability remediation.
+		- Vendors should regularly undergo AICPA SAS 70 Type II audits.
+		- Verify one’s cloud in public domain blacklists.
+		- Enforce legal contracts in employee behavior policy.
+		- Prohibit user credentials sharing among users, applications, and services.
+		- Implement secure authentication, authorization, and auditing controls.
+		- Check for data protection at both design and runtime.
+		- Implement strong key generation, storage and management, and destruction practices.
+		- Monitor the client’s traffic for malicious activities.
+		- Prevent unauthorized server access using security checkpoints.
+		- Disclose applicable logs and data to customers.
+		- Analyze cloud provider security policies and SLAs.
+		- Assess the security of cloud APIs and log customer network traffic.
+		- Ensure that the cloud undergoes regular security checks and updates.
+		- Ensure that physical security is a 24 x 7 x 365 affair.
+		- Enforce security standards in installation/configuration.
+		- Ensure that the memory, storage, and network access are isolated.
+		- Leverage strong two-factor authentication techniques, where possible.
+		- Apply a baseline security breach notification process.
+		- Analyze API dependency chain software modules.
+		- Enforce stringent registration and validation process.
+		- Perform vulnerability and configuration risk assessment.
+		- Disclose infrastructure information, security patching, and firewall details to customers.
+
+	- NIST Recommendations for Cloud Security
+		- Assess the risk posed to the client’s data, software, and infrastructure.
+		- Select an appropriate deployment model according to needs.
+		- Ensure audit procedures are in place for data protection and software isolation.
+		- Renew SLAs in case of security gaps between the organization’s security requirements and cloud provider’s standards.
+		- Establish appropriate incident detection and reporting mechanisms.
+		- Analyze the security objectives of the organization.
+		- Enquire about who is responsible for data privacy and security issues in the cloud.
+
+	- Organization/Provider Cloud Security Compliance Checklist
+		- Are the members of the security team formally trained in cloud technologies? 
+		- Do the organization’s security policies consider cloud infrastructure? 
+		- Has the security team ever been involved in implementing cloud infrastructure? 
+		- Has an organization defined security assessment procedures for cloud infrastructure? 
+		- Has an organization ever been audited for cloud security threats? 
+		- Will the organization’s cloud adoption comply with the security standards that the organization follows? 
+		- Has security governance been adapted to include cloud? 
+		- Does the team have adequate resources to implement cloud infrastructure and security?
+
+		- Operation
+		- Are regulatory compliance reports, audit reports, and reporting information available from the provider? 
+		- Are the organization’s incident handling and business continuity policies and procedures designed considering cloud security issues? 
+		- Are the cloud service provider’s compliance and audit reports accessible to the organization? 
+		- Does the CSP’s SLA address incident handling and business continuity concerns? 
+		- Does the CSP has clear policies and procedures to handle digital evidence in the cloud infrastructure? 
+		- Is the CSP itself compliant with the industry standards? 
+		- Does the CSP have skilled and sufficient staff for incident resolution and configuration management? 
+		- Has the CSP defined procedures to support the organization in case of incidents in a multi-tenant environment? 
+		- Does using a cloud provider give the organization an environmental advantage? 
+		- Does the organization know in which application or database each data entity is stored or mastered? 
+		- Is the cloud-based application maintained and disaster-tolerant (i.e., would it recover from an internal or external disaster)? 
+		- Are all personnel appropriately vetted, monitored, and supervised? 
+		- Does the CSP provide the flexibility of service relocation and switchovers? 
+		- Has the CSP implemented perimeter security controls (e.g., IDS, firewalls) and does it provide regular activity logs to the organization? 
+		- Does the CSP provide reasonable assurance of quality or availability of service? 
+		- Is it easy to securely integrate the cloud-based applications at runtime and contract termination? 
+		- Does the CSP provide 24/7 support for cloud operations and securityrelated issues? 
+		- Do the procurement processes contain cloud security requirements? 
+		- Does the CSP frequently perform vulnerability assessments to identify security gaps and apply necessary patches?
+
+		- Technology
+		- Are there appropriate access controls (e.g., federated single sign-on) that give users controlled access to cloud applications?
+		- Is data separation maintained between the organization and customer information at runtime and during backup (including data disposal)?
+		- Has the organization considered and addressed backup, recovery, archiving, and decommissioning of data stored in the cloud environment?
+		- Are mechanisms in place for authentication, authorization, and key management in the cloud environment? 
+		- Are mechanisms in place to manage network congestion, misconnection, misconfiguration, lack of resource isolation, etc., which affect services and security?
+		- Has the organization implemented sufficient security controls on the client devices used to access the cloud? 
+		- Are all cloud-based systems, infrastructure, and physical locations suitably protected? 
+		- Are the network designs suitably secure for the organization’s cloud adoption strategy?
+
+		- Management
+		- Is everyone aware of their cloud security responsibilities?
+		- Is there a mechanism for assessing the security of a cloud service? 
+		- Does the business governance mitigate the security risks that can result from cloud-based “shadow IT”?
+		- Does the organization know within which jurisdictions its data can reside?
+		- Is there a mechanism for managing cloud-related risks? 
+		- Does the organization understand the data architecture needed to operate with appropriate security at all levels?
+		- Can the organization be confident of end-to-end service continuity across several cloud service providers?
+		- Does the provider comply with all relevant industry standards (e.g., the UK’s Data Protection Act)?
+		- Does the compliance function understand the specific regulatory issues pertaining to the organization's adoption of cloud services?
+
+	- Cloud Security Tools
+		- Qualys Cloud Platform https://www.qualys.com
+		- CloudPassage Halo (https://www.cloudpassage.com)
+		- McAfee MVISION Cloud (https://www.mcafee.com)
+		- CipherCloud (https://www.ciphercloud.com)
+		- Netskope Security Cloud (https://www.netskope.com)
+		- Prisma Cloud (https://www.paloaltonetworks.com)
+
+
+
+# Module 07: Wireless Network Security 
+- Wireless Network Fundamentals 
+	- Wireless Terminologies
+		- Global System for Mobile Communications (GSM)
+		- Bandwidth
+		- Access point (AP)
+		- Basic service set identifier (BSSID)
+		- Industrial, scientific, and medical (ISM) band
+		- Hotspot
+		- Association
+		- Service set identifier (SSID)
+		- Orthogonal frequency-division multiplexing (OFDM)
+		- Multiple input, multiple output-orthogonal frequency-division multiplexing (MIMOOFDM)
+		- Direct-sequence spread spectrum (DSSS)
+		- Frequency-hopping spread spectrum (FHSS)
+	- Advantages of a Wireless Network
+	- Disadvantages of a Wireless Network
+	- Wireless Technologies
+		- Wi-Fi
+		- Bluetooth
+		- RFID
+		- WiMAX
+	- Wired vs. Wireless Networks
+	- Wireless Standards
+	- Wireless Network Topologies
+		- Ad-hoc Standalone Network Architecture (Independent Basic Service Set (IBSS))
+		- Infrastructure Network Topology (Centrally Coordinated Architecture/ Basic Service Set (BSS))
+	- Classification of Wireless Networks Based on the Connection
+		- Extension to a Wired Network
+		- Multiple Access Points (APs)
+		- LAN-to-LAN Wireless Network
+		- 4G Hotspot
+	- Wireless Network Based on the Geographic Area Coverage
+		- WLAN
+		- WWAN
+		- WPAN
+		- WMAN
+	- Components of a Wireless Network
+		- AP (Access point)
+		- NIC (Wireless network cards)
+		- Wireless modem
+		- Wireless bridge
+		- Wireless repeater (range expanders)
+		- Wireless Router
+		- Wireless gateways
+		- Wireless USB adapter
+		- Antenna
+			- Directional antenna
+			- Omnidirectional antenna
+			- Parabolic grid antenna
+			- Yagi antenna
+			- Dipole antenna
+			- Reflector antennas
+
+- Wireless Network Encryption Mechanisms 
+	- 802.11i
+	- WEP: Wired Equivalent Privacy (WEP)  
+	- EAP: The Extensible Authentication Protocol (EAP) 
+	- LEAP: Lightweight EAP (LEAP) is a proprietary version of EAP developed by Cisco.
+	- WPA: Wi-Fi Protected Access (WPA)
+	- TKIP: It is a security protocol used in WPA as a replacement for WEP.
+	- WPA2
+	- AES: It is a symmetric-key encryption used in WPA2 as a replacement for TKIP.
+	- CCMP: It is an encryption protocol used in WPA2 for strong encryption and authentication.
+	- WPA2 Enterprise: It integrates EAP standards with WPA2 encryption.
+	- RADIUS: It is a centralized authentication and authorization management system.
+	- PEAP: It is a protocol that encapsulates the EAP within an encrypted and authenticated Transport Layer Security (TLS) tunnel.
+	- WPA3
+	- Comparison of WEP, WPA, WPA2, and WPA3
+		- Issues in WEP, WPA, and WPA2
+
+- Types of Wireless Network Authentication Methods 
+	- Open system authentication process
+	- Shared key authentication process
+	- Wi-Fi Authentication Process Using a Centralized Authentication Server
+
+- Implement Wireless Network Security Measures 
+	- Creating an Inventory of Wireless Devices
+	- Placement of a Wireless AP
+	- Placement of a Wireless Antenna
+	- Disable SSID Broadcasting
+		- SSID Broadcast in the Enabled State
+		- SSID Broadcast in the Disabled State
+	- Selecting a Strong Wireless Encryption Mode
+		- Order of preference for choosing an encryption mode
+			1. WPA3
+			2. WPA2 Enterprise with RADIUS
+			3. WPA2 Enterprise
+			4. WPA2 PSK
+			5. WPA Enterprise
+			6. WPA
+			7. WEP
+		- Order of preference for choosing a Wi-Fi security method
+			1. WPA3
+			2. WPA2 + AES
+			3. WPA + AES
+			4. WPA + TKIP/AES
+			5. WPA + TKIP
+			6. WEP
+			7. Open Network (no security at all)
+	- Defending Against WPA Cracking
+		- Select a random passphrase that is not made up of dictionary words.
+		- Select a complex passphrase which contains a minimum of 20 characters and change the passphrase at regular intervals
+		- Use WPA3 /WAP2 encryption only
+		- Set the client settings properly (e.g., validate the server, specify the server address, do not prompt for new servers, etc.)
+		- Use a virtual private network (VPN) such as a remote access VPN, Extranet VPN, Intranet VPN, etc.
+		- Implement a network access control (NAC) or network access protection (NAP) solution for additional control over end-user connectivity
+		- Do not use words from the dictionary.
+		- Do not use words with numbers appended at the end.
+		- Do not use double words or simple letter substitution such as p@55w0rd.
+		- Do not use common sequences from your keyboard such as qwerty.
+		- Do not use common numerical sequences.
+		- Avoid using personal information in the key/password.
+
+	- Detecting Rogue Access Points
+		- Wireless scanning
+		- Wired network scanning
+		- Simple Network Management Protocol (SNMP) polling
+
+	- Wireless Security Tools
+		- Cisco Adaptive Wireless IPS https://www.cisco.com
+		- AirMagnet WiFi Analyzer PRO (https://www.netally.com)
+		- RFProtect (https://www.arubanetworks.com)
+		- Fern Wifi Cracker (https://github.com)
+		- OSWA-Assistant (http://securitystartshere.org)
+		- BoopSuite (https://github.com)
+
+	- Configuring the Administrative Security on Wireless Routers
+		- Changing the default password of the wireless router
+		- Assigning a strong and complex password to the router
+		- Choosing the hypertext transfer protocol secure (HTTPS) for secure communication
+		- Disabling the remote router access
+		- Enabling the firewall to block certain WAN requests
+		- Configuring an internet access policy
+		- Specifying the blocked services, URL, keywords, etc.
+		- Disabling the demilitarized zone (DMZ) option
+		- Configuring the QoS settings
+		- Avoid using the default IP ranges
+		- Keep the router firmware up-to-date
+	
+
+# Module 08: Mobile Device Security
+- Mobile Device Connection Methods 
+	- Near-field communication (NFC)
+	- Satellite communication (Satcom)
+	- Cellular communication
+	- ANT
+	- Universal Serial Bus (USB)
+	- Global Positioning System (GPS)
+	- Infrared (IR)
+	- Wi-Fi
+	- Bluetooth
+	- 5G cellular (mobile) communication
+	- Point-to-point (P2P) connection
+	- Point-to-multipoint connection
+	- Radio-frequency identification (RFID)
+
+- (MDM) Mobile Device Management
+	- Mobile application management (MAM)
+	- Mobile content management (MCM) 
+	- Context-aware authentication
+	- Mobile email management (MEM) 
+	- Enterprise mobility management (EMM) 
+	- Mobile security management
+	- Remote wipe
+	- Screen lock
+	- Passwords and PINs
+	- Biometrics
+	- Push notification services
+	- Geolocation
+	- Geofencing
+	- Full device encryption
+	- Containerization
+
+- Common Mobile Usage Policies in Enterprises
+	- Mobile Use Approaches in Enterprise
+		- BYOD (Bring Your Own Device)
+		- COPE (Company Owned, Personally Enabled)
+		- COBO (Company Owned, Business Only)
+		- CYOD (Choose Your Own Device)
+
+- Security Risks and Guidelines Associated with Enterprises Mobile Usage Policies 
+	- Enterprise Mobile Device Security Risks and Challenges
+		- Physical Risks and Challenges
+		- Network-based Risks and Challenges
+		- System-based Risks and Challenges
+		- Application-based Risks and Challenges
+	- Risk Associated with BYOD, CYOD, COPE, and COBO
+		- Sharing confidential data on an unsecured network
+		- Data leakage and endpoint security issues
+		- Improperly disposing of devices
+		- Support of many different devices
+		- Mixing personal and private data
+		- Lost or stolen devices
+		- Lack of awareness
+		- Ability to bypass organizational network policy rules
+		- Infrastructure issues
+		- Disgruntled employees
+
+	- Security Guidelines for BYOD, CYOD, COPE, and COBO
+		- For Security Professional
+			- Secure the data centers in organizations with multi-layered protection systems.
+			- Educate employees about these policies.
+			- Clarify who owns which apps and data.
+			- Use an encrypted channel for data transfer.
+			- Clarify which apps are allowed or banned.
+			- Control access on a need-to-know basis.
+			- Do not allow jailbroken and rooted devices.
+			- Apply session authentication and timeout policy on access gateways.
+			- Ensure that the employees completely understand and sign-off on the policies.
+			- Create a procedure for removing all corporate data and assets from the device if an employee leaves the company.
+			- Ensure that the MDM and MAM solutions of company correspond its requirements.
+		- For Employees
+			- Impose company WLAN access when on-site.
+			- Ensure the use of complex passcodes and change them frequently.
+			- Ensure that mobile devices are registered and authenticated before allowing access to the organizational network.
+			- Consider multi-factor authentication methods to enhance the security while remotely accessing the organization’s information systems.
+			- Make users agree and sign the policies before they can access the organization’s information system.
+			- When an employee leaves the organization, state whether total device wipe or selective wipe of certain apps and data is required and ensure that the organization and personal data are maintained separately.
+			- Implement strong algorithms to encrypt the organization data stored in the devices; also use an encrypted channel for data transfer.
+			- If a device is lost or stolen, remotely reset or wipe the device passwords to prevent unauthorized access to the sensitive data of an organization.
+			- Implement an SSL-based VPN, which provides secure remote access.
+			- Ensure that user devices are regularly updated with the latest OSes and other software, which could avoid and sometimes even fix any security vulnerabilities.
+			- Do not provide offline access to the sensitive information of an organization, which should be accessible only via the company network.
+			- Use anti-virus and data loss prevention (DLP) solutions.
+			- Set passwords for apps to restrict others from accessing them.
+		
+- Implement Enterprise-level Mobile Security Management Solutions 
+	- Mobile Device Management Solutions
+		- Miradore https://www.miradore.com
+		- AirWatch (https://www.vmware.com)
+		- Microsoft Intune (https://www.microsoft.com)
+		- IBM MaaS360 (https://www.ibm.com)
+		- XenMobile (https://www.citrix.com)
+		- Absolute Manage MDM (http://www.absolute.com)
+	- Examples of Mobile Application Management (MAM)
+		- Microsoft Intune https://www.microsoft.com
+		- AppStation's MAM (https://www.mobileiron.com)
+		- Scalefusion Application Management (https://scalefusion.com)
+		- ManageEngine Mobile Device Manager Plus (https://www.manageengine.com)
+		- Apriorit Enterprise Mobile Device and Application Management (https://www.apriorit.com)
+		- Appaloosa (https://www.appaloosa.io)
+	- Mobile Content Management Solutions
+		- Vaultize (https://www.vaultize.com)
+		- MobileIron (https://www.mobileiron.com)	
+		- AppTec360° (https://www.apptec360.com)
+	- Mobile Threat Defense Solutions
+		- MobileIron Threat Defense (MTD) (https://www.mobileiron.com)
+		- Pradeo Security Mobile Threat Defense (https://www.pradeo.com)
+		- Zimperium Mobile Threat Defense (MTD) (https://www.zimperium.com)
+		- Wandera Mobile Threat Defense (https://www.wandera.com)
+		- Lookout MTD (https://www.lookout.com)
+	- Mobile Email Management Solutions
+		- 42Gears MEM (https://www.42gears.com)
+		- Hexnode Mobile Email Management (https://www.hexnode.com)
+		- Mimecast Mobile Email Management (https://www.mimecast.com)
+	- Enterprise Mobility Management Solutions
+		- ManageEngine Mobile Device Manager Plus (https://www.manageengine.com)
+		- 42Gears Enterprise Mobility Management (EMM) (https://www.42gears.com)
+		- Scalefusion EMM (https://scalefusion.com)
+		- IBM Security MaaS360® (https://www.ibm.com)
+		- Zebra Enterprise Mobility Management (EMM) Tool Kit (https://www.zebra.com)
+	- Unified Endpoint Management Solutions
+		- Mobileiron UEM (https://www.mobileiron.com)
+		- Ivanti Unified Endpoint Manager (https://www.ivanti.com)
+		- Workspace ONE UEM (https://www.vmware.com)
+		- ManageEngine Desktop Central (https://www.manageengine.com)
+		- 42Gears UEM (https://www.42gears.com)
+
+- Implement General Security Guidelines and Best Practices on Mobile Platforms 
+	- Mobile Application Security Best Practices
+		- Ensure that the apps do not save passwords
+		- Avoid using query string while handling sensitive data
+		- Use code obfuscation and encryption to secure the application source code
+		- Implement two-factor authentication
+		- Use SSL/TLS to send data over a secure channel
+		- Avoid caching app data
+		- Perform validation checks on input data
+		- Implement secure session management
+		- Protect application setting
+		- Use server-side authentication
+		- Use cryptographic algorithms and key management
+		- Build threat models to defend data
+		- Ensure that employees download trusted apps from enterprise app stores
+		- Use containerization for critical corporate data
+		- Perform regular mobile security audits
+		- Regular software updates
+		- Implement jailbreak protection
+
+	- Mobile Data Security Best Practices
+		- Secure mobile infrastructure and strengthen the endpoints
+		- Encrypt the data stored on devices
+		- Enable over-the-air encryption using SSL, TLS, VPN, and WPA2
+		- Backup mobile data periodically
+		- Do not store extremely sensitive information on mobile devices
+		- Do not store passwords or PINs as contacts on your phone
+		- Use private data centers to store data and implement device authentication
+		- Maintain access control for devices and data
+		- Avoid public Wi-Fi networks
+		- Set automatic device locks when devices are not in use
+		- Ensure that users can access the corporate data from a secure central location
+		- Complete software updates and patches in a timely manner
+		- Educate employees to recognize suspicious emails
+		- Keep the antivirus and anti-malware software updated
+		- Train employees to encrypt hard drives and USBs before storing any work-related data on them
+
+	- Mobile Network Security Guidelines
+		- Disable interfaces such as Bluetooth, infrared, and Wi-Fi when not in use
+		- Set Bluetooth-enabled devices to non-discoverable mode
+		- Avoid connecting to unknown Wi-Fi networks and using public Wi-Fi hotspots
+		- Connect the mobile devices to encrypted Wi-Fi networks only
+		- Configure web accounts to use secure connections
+		- Isolate a group of users using different SSIDs and segment the traffic for these groups to different VLANS
+		- Apply different firewall rules and filters to different combinations of user groups or devices
+		- Configure web accounts to use secure connections
+
+	- General Guidelines for Mobile Platform Security
+		- Do not install too many applications and avoid auto-uploading photos to social networks
+		- Perform security assessment for the application architecture
+		- Maintain configuration control and management
+		- Install applications from trusted app stores
+		- Securely wipe or delete the data while disposing of devices
+		- Do not share any information within GPS-enabled apps unless required
+		- Never connect two separate networks such as Wi-Fi and Bluetooth simultaneously
+		- Disable wireless access such as Wi-Fi and Bluetooth if not in use
+		- Never connect two separate networks such as Wi-Fi and Bluetooth simultaneously
+		- Configure a strong passcode with the maximum possible length
+		- Update the OS and apps to keep them secure
+		- Enable Remote Management
+		- Do Not Allow Rooting or Jailbreaking
+		- Use remote wipe services such as Find My Device (Android) and Find My iPhone or Find My (Apple iOS) to locate your device if it is lost or stolen
+		- Encrypt the device and its backups
+		- Perform Periodic Backup and Synchronization
+		- Filter emails by configuring the server-side settings of the corporate email system
+		- Strengthen Browser Permission Rules
+		- Design and Implement Mobile Device Policies
+		- Control devices and applications
+		- Prohibit USB keys
+		- Manage the operating and application environments
+		- Press the power button to lock the device when not in use
+
+	- Android Security Tools
+		- Kaspersky Internet Security for Android https://my.kaspersky.com
+		- Avira Antivirus Security (https://www.avira.com)
+		- Avast Mobile Security (https://www.avast.com)
+		- McAfee Mobile Security (https://www.mcafeemobilesecurity.com)
+		- Lookout Mobile Security and Antivirus (https://www.lookout.com)
+		- Sophos Mobile Security (https://www.sophos.com)
+
+	- iOS Device Security Tools
+		- Avira Mobile Security Source: https://www.avira.com
+		- Norton Mobile Security (https://us.norton.com)
+		- LastPass Password Manager (https://www.lastpass.com)
+		- Lookout Mobile Security (https://www.lookout.com)
+		- SplashID Safe Password Manager (https://www.splashid.com)
+		- Webroot Mobile Security (https://www.webroot.com)
+
+
+# Module 09: IoT Device Security 
+- IoT Devices, Application Areas, and Communication Models 
+	- What is IoT?
+	- Why Organizations are Opting for IoT-enabled Environments
+		- Sensing technology
+		- IoT gateways
+		- Cloud server/data storage
+		- Remote control using mobile apps
+	- IoT Application Areas and Devices
+	- IoT Architecture
+		- Gateways
+		- Cloud gateways
+		- Streaming data processors 
+		- Data lakes 
+		- Big data warehouses 
+		- Data analytics 
+		- Machine learning 
+		- Control applications
+		- User applications (web or mobile applications)
+	- Layers of the IoT Architecture
+		- Layer 1: Device Layer
+		- Layer 2: Communication Layer
+		- Layer 3: Cloud Layer
+		- Layer 4: Process Layer
+	- IoT Communication Models
+		- Device-to-Device Communication Model
+		- Device-to-Cloud Communication Model
+		- Device-to-Gateway Communication Model
+		- Cloud-to-Cloud (Back-End Data-Sharing) Communication Model
+	
+- Security in IoT-enabled Environments 
+	- Things/Devices Tier
+	- Gateway/Control Tier
+	- Communication/Data Center/Cloud IOT Platform/Cloud Tier
+	- IoT System Management
+		- Device management
+			- Identify the identity of devices 
+			- Configure devices and control them 
+			- Monitor and diagnose devices 
+			- Update software and maintain it
+
+		- User management
+			- Identify users.
+			- Set user roles (owners, guests, etc.).
+			- Set access levels for users.
+			- Control the access of a few users to specific information.
+			- Set user ownership.
+			- Add and remove users.
+			- Manage user settings.
+			- Allow permissions to perform certain operations within an IoT system (for example, controlling and recording user activities).
+
+		- Security monitoring
+			- Log and analyze commands sent by control applications to things.
+			- Monitor the actions of users.
+			- Store all actions in the cloud.
+			- Identify the patterns of malicious behavior.
+			- Store samples of malicious activity and compare them with the logs generated by the IoT system to avoid attacks and their impact.
+
+	- Stack-wise IoT Security Principles
+		- IoT Security Principles on the Device Layer
+			- Need for device intelligence to handle complex security tasks
+			- Security advantage of processing at the edge
+		- IoT Security Principles on the Communication Layer
+			- Initiate a connection to the cloud but not from the cloud
+			- Inherent security of a message
+		- IoT Security Principle on the Cloud Layer
+			- Identification, authentication, and encryption for machines, rather than humans
+		- IoT Security Principle on the Process Layer
+			- Security of remote control and updates
+
+	- IoT Framework Security Considerations
+	- IoT Device Management
+		- IoT Device Management Solutions
+			- Azure IoT Central https://azure.microsoft.com
+			- Oracle IoT Asset Monitoring Cloud (https://www.oracle.com)
+			- Predix (https://www.ge.com)
+			- Cloud IoT Core (https://cloud.google.com)
+			- IBM Watson IoT Platform (https://www.ibm.com)
+			- AT&T IoT Connectivity Management (https://www.business.att.com)
+
+	- IoT Security Best Practices
+		- Disable the “guest” and “demo” user accounts if enabled
+		- Use the “Lock Out” feature to lock out accounts for excessive invalid login attempts
+		- Implement a strong authentication mechanism
+		- Locate control system networks and devices behind firewalls, and isolate them from the business network
+		- Implement IPS and IDS in the network
+		- Implement end-to-end encryption and use public key infrastructure (PKI)
+		- Use VPN architecture for secure communication
+		- Deploy security as a unified, integrated system
+		- Allow only trusted IP addresses to access the device from the Internet
+		- Disable telnet (port 23)
+		- Disable the UPnP port on routers
+		- Protect the devices against physical tampering
+		- Patch vulnerabilities and update the device firmware regularly
+		- Monitor traffic on port 48101, as infected devices attempt to spread the malicious file using port 48101
+		- Position of mobile nodes should be verified with the aim of referring one physical node with one vehicle identity only, which means one vehicle cannot have two or more identities
+		- Data privacy should be implemented; therefore, the user’s account or identity should be kept protected and hidden from other users
+		- Data authentication should be performed to confirm the identity of the original source node
+		- Maintain data confidentiality using symmetric key encryption
+		- Implement a strong password policy requiring a password at least 8–10 characters long with a combination of letters, numbers, and special characters
+		- Use CAPTCHA and account lockout policy methods to avoid brute-force attacks
+		- Use devices made by manufacturers with a track record of security awareness
+		- Isolate IoT devices on protected networks
+
+	- IoT Security Tools
+		- Bevywise IoT Simulator https://www.bevywise.com
+		- SeaCat.io (https://teskalabs.com)
+		- DigiCert IoT Security Solutions (https://www.digicert.com)
+		- FortiNAC (https://www.fortinet.com)
+		- Darktrace (https://www.darktrace.com)
+		- Cisco IoT Threat Defense (https://www.cisco.com)
+
+
+# Module 10: Cryptography and PKI 
+- Cryptographic Techniques 
+	- Types of Encryption
+		- Symmetric Encryption
+			- Advantages:
+				- It is easy to encrypt and decrypt a message
+				- It is faster than asymmetric encryption
+				- It is used to encrypt large amounts of data
+			- Disadvantages:
+				- The communicating parties need to share the key used for transmitting the data
+				- Unauthorized access to a symmetric key leads to the compromise of data at both ends
+		- Asymmetric Encryption
+			- Advantages:
+				- It is more secure than symmetric encryption.
+				- There is no need to distribute the keys.
+			- Disadvantages:
+				- It takes a longer processing time than symmetric encryption since it involves various combinations of secret keys and public keys.
+				- Various complex algorithms involved in the
+	- Government Access to Keys (GAK)
+
+- Cryptographic Algorithms (DES, AES, RC4, RC5, RC6, DSA, RSA, MD5, MD6, SHA, etc.) 
+	- Ciphers
+		- Classical Ciphers
+			- Substitution cipher
+			- Transposition cipher
+		- Modern Ciphers
+			- Based on the type of key used
+				- Symmetric-key algorithms (Private-key cryptography): Use the same key for encryption and decryption.
+				- Asymmetric-key algorithms (Public-key cryptography): Use two different keys for encryption and decryption.
+			- Based on the type of input data
+				- Block cipher
+				- Stream cipher:
+	- Data Encryption Standard (DES)
+	- Advanced Encryption Standard (AES)
+	- RC4, RC5, and RC6 Algorithms
+	- Digital Signature Algorithm (DSA)
+	- Rivest Shamir Adleman (RSA)
+	- MD5 and MD6
+	- Secure Hashing Algorithm (SHA)
+	- Hash-based message authentication code (HMAC)
+
+- Cryptography Tools 
+	- MD5 and MD6 Hash Calculators
+		- MD5 Calculator https://www.bullzip.com
+		- HashMyFiles https://www.nirsoft.net
+		- MD6 Hash Generator (https://www.browserling.com)
+		- All Hash Generator (https://www.browserling.com)
+		- MD6 Hash Generator (https://convert-tool.com)
+		- md5 hash generator (https://onlinehashtools.com)
+		- HashCalc (https://www.slavasoft.com)
+	- Hash Calculators for Mobile
+		- Hash Tools https://play.google.com
+		- Hash Droid https://play.google.com
+		- Hash Checker (https://play.google.com)
+		- Hashr - Hash & Checksum Calculator (https://play.google.com)
+		- Hash Calc (https://play.google.com)
+		- Hash Generator - Checksum Calculator (https://play.google.com)
+		- Hash Smart Checker (https://play.google.com)
+	- Cryptography Tools
+		- BCTextEncoder https://www.jetico.com
+		- AxCrypt (https://axcrypt.net)
+		- Microsoft Cryptography Tools (https://docs.microsoft.com)
+		- Concealer (https://www.belightsoft.com)
+		- CryptoForge (https://www.cryptoforge.com)
+		- Cyphertop (https://cyphertop.com)
+
+- Public Key Infrastructure (PKI) 
+	- Digital Signature
+	- Digital Certificates
+		- Digital Certificate Attributes
+			- Serial number: Represents the unique certificate identity.
+			- Subject: Represents the owner of the certificate which may be a person or an organization.
+			- Signature algorithm: States the name of the algorithm used for creating the signature.
+			- Key-usage: Specifies the purpose of the public key, whether it should be used for encryption, signature verification, or both.
+			- Public key: Used for encrypting a message or verifying the signature of the owner.
+			- Issuer: Provides the identity of the intermediary who issued the certificate.
+			- Valid from: Denotes the date from which the certificate is valid.
+			- Valid to: Denotes the date till which the certificate is valid.
+			- Thumbprint algorithm: Specifies the hashing algorithm used for digital signatures.
+			- Thumbprint: Specifies the hash value for the certificate, which is used for verifying the certificate’s integrity.
+	- Public Key Infrastructure (PKI). Uses of PKI
+	- Certification Authorities
+		- Comodo https://www.comodoca.com
+		- IdenTrust https://www.identrust.com
+		- DigiCert CertCentral https://www.digicert.com
+		- GoDaddy https://www.godaddy.com
+
+
+# Module 11: Data Security 
+- Data Security and its Importance 
+	- What is Business Critical Data?
+	- Need for Data Security
+		- Effect of data loss:
+			- Brand damage and reputation loss
+			- Competitive advantage loss
+			- Loss of customers
+			- Market share loss
+			- Shareholder value erosion
+			- Fines and civil penalties
+			- Litigation/legal actions
+			- Regulatory fines/sanctions
+			- Significant cost and effort to notify affected parties and recover from breach
+		- Causes for data loss
+			- Loss/theft of laptops and mobile devices
+			- Unauthorized data transfer to USB devices
+			- Improper sensitive data categorization	
+			- Data theft by employees/external parties
+			- Printing and copying of sensitive data by employees
+			- Insufficient response to intrusions
+			- Unintentional sensitive data transmission
+	- Data Security
+		- Three Basic States of Data
+			- Data at rest
+			- Data in use
+			- Data in transit
+		- “Data at Rest” vs “Data in Use” vs “Data in Transit” Security Controls
+			- Data at rest: Inactive data stored in digitally at a physical location 
+				- Data encryption
+				- Password protection
+				- Tokenization
+				- Data federation
+			- Data in use: Data stored in memory
+				- Authentication techniques
+				- Tight control on this data’s accessibility
+				- Full memory encryption
+				- Strong identity management
+			- Data in transit: Data traversing using some means of communication
+				-SSL and TLS
+				- Email encryption tools such as PGP or S/MIME
+				- Firewall controls
+
+	- Data Security Technologies
+		- Data Access Control
+		- Data Encryption
+		- Data Masking
+		- Data Resilience and Backup
+		- Data Destruction
+		- Data Retention
+
+- Security Controls for Data Encryption 
+	- Data Encryption Techniques
+		- Disk encryption
+		- File-level encryption
+		- Removable media encryption
+
+	- Disk Encryption: Implementing Built-in Disk Encryption for Windows
+		- Device encryption
+		- BitLocker encryption
+	- Disk Encryption Tools
+		- VeraCrypt https://www.veracrypt.fr
+		- BitLocker Drive Encryption (https://docs.microsoft.com)
+		- FinalCrypt (https://www.finalcrypt.org)
+		- Seqrite Encryption Manager (https://www.seqrite.com)
+		- FileVault (https://support.apple.com)
+		- Gilisoft Full Disk Encryption (http://www.gilisoft.com)
+
+	- File Level Encryption: Implementing Built-in File System-level Encryption on Windows
+	- File Encryption Tools
+		- Advanced Encryption Package http://www.aeppro.com
+		- AxCrypt (https://www.axcrypt.net)
+		- idoo File Encryption (https://www.idooencryption.com)
+		- Cryptomator (https://cryptomator.org)
+		- Encrypto (https://macpaw.com)
+		- AES Crypt (https://www.aescrypt.com)
+
+	- Removable Media Encryption: Implementing Removable Media Encryption in Windows
+	- Removable Media Encryption Tools
+		- GiliSoft USB Encryption http://www.gilisoft.com
+		- idoo USB Encryption (https://www.idooencryption.com)
+		- Kakasoft USB Security (https://www.kakasoft.com)
+		- Rohos Mini Drive (https://www.rohos.com)
+		- McAfee File & Removable Media Protection (https://www.mcafee.com)
+		- MFG’s Removable Media Encryption (https://www.managedencryption.co.uk)
+
+- Data Backup and Retention 
+	- Reasons for Data Loss
+		- Human error: Deletion of data purposefully or accidently, misplacement of data storage devices, and errors in administering databases.
+		- Crimes: Stealing or making modifications to critical data in an organization.
+		- Natural causes: Power failures, sudden software changes, or hardware damages.
+		- Natural disaster: Floods, earthquakes, fire, etc.
+	- Benefits of Performing a Data Backup
+		- It offers access to critical data even in the event of a disaster, ensuring peace of mind in a workplace.
+		- Backup of critical data prevents an organization from losing its business. It also helps them retrieve data anytime.
+		- Data recovery helps organizations recover lost data and ensure business continuity.
+	- Data Backup Strategy/Plan
+		- Identifying the critical business data
+		- Selecting the backup media
+		- Selecting a backup technology
+		- Selecting the appropriate RAID levels
+		- Selecting an appropriate backup method
+		- Selecting the backup types
+		- Choosing the right backup solution
+		- Conducting a recovery drill test
+	- Advantages of RAID Systems
+		- Performance and reliability
+		- Parity check
+		- Data redundancy
+		- Disk striping
+		- System uptime
+	- Disadvantages of RAID Systems
+		- Writing network drivers
+		- Non compatibility
+		- Loss of data
+		- Time consumed in rebuilding
+		- Cost
+
+	- RAID Storage Architecture
+	- RAID Level 0: Disk Striping
+	- RAID Level 1: Disk Mirroring
+	- RAID Level 3: Disk Striping with Parity
+	- RAID Level 5: Block Interleaved Distributed Parity
+	- RAID Level 10: Blocks Striped and Mirrored
+	- RAID Level 50: Mirroring and Striping across Multiple RAID Levels
+	- Storage Area Network (SAN)
+	- Network Attached Storage (NAS)
+	- Selecting an Appropriate Backup Method
+		- Hot Backup
+		- Cold Backup
+		- Warm Backup
+	- Choosing the Backup Location
+		- Onsite Data Backup
+		- Offsite Data Backup
+		- Cloud Data Backup
+	- Types of Backup. Advantages and Disadvantages
+		- Full backup
+		- Differential backup
+		- Incremental backup
+	- Data Backup Tools
+		- Genie Backup Manager Pro (https://www.zoolz.com)
+		- BullGuard Backup (https://www.bullguard.com)
+		- NTI Backup Now EZ (https://www.nticorp.com)
+		- Power2Go 13 (https://www.cyberlink.com)
+		- Backup4all (https://www.backup4all.com)
+	- Data Backup Retention
+		- Data Retention Policy Best Practices
+			- Create a data retention policy that fulfills legal and business requirements
+			- Justify the reasons behind the policy details
+			- Start creating a policy with minimal requirements, and add new requirements as and when required
+			- Create a simple policy which is easy for the employees to implement
+			- Create different data retention policies for different data types, as per their legal and business impacts
+			- Retain customer, subscriber, and user information only till they are necessary
+			- Implement software to manage the data retention tasks
+			- Classify data and decide if it should be archived or deleted
+			- Files which are not accessed frequently should be moved to a lower-level archive
+			- Organize and store archived data such that it is easily accessible
+
+	- Data Recovery Tools
+		- EaseUS Data Recovery Wizard https://www.easeus.com
+		- Recuva® (https://www.ccleaner.com)
+		- Puran File Recovery (http://www.puransoftware.com)
+		- Glary Undelete (https://www.glarysoft.com)
+		- SoftPerfect File Recovery (https://www.softperfect.com)
+		- Wise Data Recovery (https://www.wisecleaner.com)
+
+- Data Loss Prevention Concepts 
+	- Types of Data Loss Prevention (DLP) Solutions
+		- Endpoint DLP
+		- Network DLP
+		- Storage DLP
+	- DLP Solutions 
+		- Windows Information Protection (WIP)
+		- MyDLP https://mydlp.com
+		- Symantec Data Loss Prevention (https://www.symantec.com)
+		- SecureTrust Data Loss Prevention (https://www.securetrust.com)
+		- McAfee Total Protection (https://www.mcafee.com)
+		- Check Point Data Loss Prevention (https://www.checkpoint.com)
+		- Digital Guardian Endpoint DLP (https://digitalguardian.com)
+
+	- Best Practices for a Successful DLP Implementation
+		- Identify the main objective of DLP.
+		- Identify sensitive data for protection.
+		- Evaluate the available DLP vendors.
+		- Ensure that the selected DLP product is compatible and supports the required data types and data stores of the organization.
+		- Identify the roles and responsibilities of individuals for the implementation of DLP solution.
+		- Implement DLP with a minimal base to reduce false positives and enhance the base gradually by identifying sensitive data.
+		- Enhance the DLP policies to support effective DLP operations and eliminate false positives.
+
+
+# Module 12: Network Traffic Monitoring 
+- Need and Advantages of Network Traffic Monitoring 
+	- Advantages of network monitoring
+		- Understanding how data flows in a network
+		- Optimizing network performance
+		- Avoiding bandwidth bottlenecks
+		- Detecting signs of malicious activity
+		- Finding unnecessary and vulnerable applications
+		- Investigating security breaches
+		- Understanding and evaluating network utilization
+		- Determining download/upload speeds
+		- Determining the type, size, origin, destination, and content/data of packets
+
+- Determine Baseline Traffic Signatures for Normal and Suspicious Network Traffic
+	- Network Traffic Signatures
+		- Type of Signatures depending on their behavior
+			- Normal traffic signatures
+			- Attack Signatures
+	- Categories of Suspicious Traffic Signatures
+		- Informational
+		- Reconnaissance
+		- Unauthorized access
+		- Denial of service (DoS)
+	- Attack Signature Analysis Techniques
+		
+
+- Perform Network Monitoring for Suspicious Traffic
+	- Wireshark https://www.wireshark.org
+		- Follow TCP Stream in Wireshark
+	- Display Filters in Wireshark https://wiki.wireshark.org
+		- Additional Wireshark Filters
+	- Monitoring and Analyzing FTP Traffic
+	- Monitoring and Analyzing Telnet Traffic
+	- Monitoring and Analyzing HTTP Traffic
+	- Network Sniffers for Network Monitoring
+		- tcpdump https://www.tcpdump.org
+		- Riverbed Packet Analyzer Plus (https://www.riverbed.com)
+		- OmniPeek (https://www.liveaction.com)
+		- Observer Analyzer (https://www.viavisolutions.com)
+		- SolarWinds Deep Packet Inspection and Analysis (https://www.solarwinds.com)
+		- Xplico (https://www.xplico.org)
+	- Network Monitoring Tools
+		- PRTG Network Monitor https://www.paessler.com
+		- SolarWinds Network Performance Monitor (https://www.solarwinds.com)
+		- ManageEngine OpManager (https://www.manageengine.com)
+		- Capsa Free Network Analyzer (https://www.colasoft.com)
+		- Monitis Network Monitoring Solution (https://www.monitis.com)
+		- Nagios Network Analyzer (https://www.nagios.com)
+
+
+
+
